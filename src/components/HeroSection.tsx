@@ -1,11 +1,10 @@
-
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Terminal } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const HeroSection = () => {
   const [typedText, setTypedText] = useState("");
-  const fullText = "Backend Engineer | Node.js Developer | Problem Solver";
+  const fullText = "Backend Developer & Node.js Specialist";
 
   useEffect(() => {
     let index = 0;
@@ -46,13 +45,17 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 text-center z-10">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
+            <span className="text-gradient">
+              Hi, I'm Ashir N Basheer — 
+            </span>
+            <br />
             <span className="text-gradient terminal-cursor">
               {typedText}
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Crafting scalable backend systems with Node.js, Express, and cloud-native tools.
+            Crafting scalable, high-performance systems with clean backend architecture.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

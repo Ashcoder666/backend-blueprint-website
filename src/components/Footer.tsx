@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
 
           <p className="text-center text-muted-foreground text-sm">
-            © 2024 Backend Developer Portfolio. Crafted with passion for clean code.
+            © 2024 Ashir N Basheer. Crafted with passion for clean code.
           </p>
         </div>
       </div>

@@ -7,7 +7,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-            <span className="text-gradient">About Me</span>
+            <span className="text-gradient">About Ashir N Basheer</span>
           </h2>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
