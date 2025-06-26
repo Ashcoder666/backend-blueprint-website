@@ -115,7 +115,7 @@ const HeroSection = () => {
         </div>
         <div className="absolute top-3/4 right-0 w-full opacity-20">
           <div className="font-mono text-terminal-blue text-sm animate-slide-across-reverse">
-            db.collection.find().sort({createdAt: -1})
+            db.collection.find().sort({{createdAt: -1}})
           </div>
         </div>
       </div>
