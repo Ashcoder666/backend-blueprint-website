@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -82,9 +82,94 @@
     background-clip: text;
   }
 
+  .glow-text {
+    text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+  }
+
   .terminal-cursor::after {
     content: '|';
     color: #00ff88;
     animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0%, 50% {
+      opacity: 1;
+    }
+    51%, 100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes slide-across {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
+  }
+
+  @keyframes slide-across-reverse {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100vw);
+    }
+  }
+
+  .animate-slide-across {
+    animation: slide-across 15s linear infinite;
+  }
+
+  .animate-slide-across-reverse {
+    animation: slide-across-reverse 18s linear infinite;
+  }
+
+  .hover\:glow:hover {
+    filter: drop-shadow(0 0 10px currentColor);
+  }
+
+  /* Matrix rain effect */
+  @keyframes matrix-rain {
+    0% {
+      transform: translateY(-100vh);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+  }
+
+  .matrix-char {
+    animation: matrix-rain linear infinite;
+  }
+
+  /* Enhanced floating animation */
+  @keyframes float-enhanced {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    25% {
+      transform: translateY(-10px) rotate(2deg);
+    }
+    50% {
+      transform: translateY(-5px) rotate(0deg);
+    }
+    75% {
+      transform: translateY(-15px) rotate(-2deg);
+    }
+  }
+
+  .animate-float {
+    animation: float-enhanced 4s ease-in-out infinite;
   }
 }

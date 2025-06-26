@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -133,6 +132,38 @@ export default {
 					'51%, 100%': {
 						borderColor: '#00ff88'
 					}
+				},
+				'matrix-fall': {
+					'0%': {
+						transform: 'translateY(-100vh)',
+						opacity: '0'
+					},
+					'10%': {
+						opacity: '1'
+					},
+					'90%': {
+						opacity: '1'
+					},
+					'100%': {
+						transform: 'translateY(100vh)',
+						opacity: '0'
+					}
+				},
+				'slide-across': {
+					'0%': {
+						transform: 'translateX(-100%)'
+					},
+					'100%': {
+						transform: 'translateX(100vw)'
+					}
+				},
+				'slide-across-reverse': {
+					'0%': {
+						transform: 'translateX(100%)'
+					},
+					'100%': {
+						transform: 'translateX(-100vw)'
+					}
 				}
 			},
 			animation: {
@@ -142,10 +173,14 @@ export default {
 				'float': 'float 3s ease-in-out infinite',
 				'glow': 'glow 2s ease-in-out infinite',
 				'typing': 'typing 3s steps(30) infinite',
-				'blink': 'blink 1s infinite'
+				'blink': 'blink 1s infinite',
+				'matrix-fall': 'matrix-fall 8s linear infinite',
+				'slide-across': 'slide-across 15s linear infinite',
+				'slide-across-reverse': 'slide-across-reverse 18s linear infinite'
 			},
 			fontFamily: {
 				'inter': ['Inter', 'sans-serif'],
+				'mono': ['Fira Code', 'IBM Plex Mono', 'Source Code Pro', 'monospace'],
 			}
 		}
 	},
