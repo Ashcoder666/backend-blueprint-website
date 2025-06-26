@@ -53,37 +53,42 @@ const HeroSection = () => {
           )}
 
           {/* CTA Buttons - Only show after prompt is complete */}
-          {promptComplete && (
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in" style={{ animationDelay: '0.5s' }}>
-              <Button 
-                size="lg" 
-                className="bg-terminal-green hover:bg-terminal-green/80 text-black font-semibold px-6 py-2 font-mono relative overflow-hidden group text-sm"
-              >
-                <span className="relative z-10">Download Resume</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-terminal-blue text-terminal-blue hover:bg-terminal-blue/10 px-6 py-2 font-mono hover:shadow-lg hover:shadow-terminal-blue/30 transition-all text-sm"
-              >
-                <Linkedin className="mr-2 h-3 w-3" />
-                Connect on LinkedIn
-              </Button>
-            </div>
-          )}
+      {promptComplete && (
+  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in" style={{ animationDelay: '0.5s' }}>
+    {/* Download Resume Button */}
+    <a
+      href="/Ashir_Resume.pdf" // <-- Make sure this file exists in your /public folder
+      download
+      className="bg-terminal-green hover:bg-terminal-green/80 text-black font-semibold px-6 py-2 font-mono relative overflow-hidden group text-sm rounded inline-block"
+    >
+      <span className="relative z-10">Download Resume</span>
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+    </a>
+
+    {/* LinkedIn Button */}
+    <a
+      href="https://www.linkedin.com/in/ashir-n-basheer-517615211/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="border-terminal-blue text-terminal-blue hover:bg-terminal-blue/10 px-6 py-2 font-mono hover:shadow-lg hover:shadow-terminal-blue/30 transition-all text-sm rounded inline-flex items-center"
+    >
+      <Linkedin className="mr-2 h-3 w-3" />
+      Connect on LinkedIn
+    </a>
+  </div>
+)}
 
           {/* Social Links - Only show after prompt is complete */}
           {promptComplete && (
             <div className="flex justify-center space-x-6 animate-fade-in" style={{ animationDelay: '1s' }}>
               <a 
-                href="#" 
+                href="https://github.com/Ashcoder666" 
                 className="text-muted-foreground hover:text-terminal-green transition-colors transform hover:scale-110 hover:glow"
               >
                 <Github className="w-5 h-5" />
               </a>
               <a 
-                href="#" 
+                href="https://www.linkedin.com/in/ashir-n-basheer-517615211/" 
                 className="text-muted-foreground hover:text-terminal-blue transition-colors transform hover:scale-110 hover:glow"
               >
                 <Linkedin className="w-5 h-5" />

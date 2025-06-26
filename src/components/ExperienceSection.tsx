@@ -5,7 +5,7 @@ const ExperienceSection = () => {
   const experiences = [
     {
       title: "Backend Developer",
-      company: "Product-Based Automotive Company",
+      company: "ISPG Technologies",
       period: "Current Role",
       description: "Building enterprise-grade APIs and microservices for automotive software solutions.",
       technologies: ["Node.js", "Express", "Redis", "MongoDB", "Docker", "AWS", "Microservices"],
@@ -13,7 +13,7 @@ const ExperienceSection = () => {
     },
     {
       title: "Project Lead",
-      company: "Fintech Loan Management App",
+      company: "Metric Tree Labs",
       period: "Previous Role",
       description: "Led development of REST APIs and integrated third-party finance tools while managing team delivery.",
       technologies: ["Node.js", "Express", "PostgreSQL", "Third-party APIs", "Team Leadership"],
@@ -21,7 +21,7 @@ const ExperienceSection = () => {
     },
     {
       title: "Full Stack Developer",
-      company: "Littra",
+      company: "Littra Technologies",
       period: "Early Career",
       description: "Developed end-to-end solutions with React frontend and Node.js backend architecture.",
       technologies: ["React", "Node.js", "MongoDB", "Full Stack", "Web Development"],

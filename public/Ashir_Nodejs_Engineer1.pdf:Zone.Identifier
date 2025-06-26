@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://builder.zety.com/resume/final-resume
+HostUrl=https://builder.zety.com/eb/api/v2/documents/download?userId=6d429b88-b91a-4351-a3dd-3848d9c37ef1&documentId=6966b08e-3571-483f-9e0e-6960fa08a73f&portalId=84&fileFormatType=PDF&docFileType=eXPT&styleSheetName=RbtoHtml2&skipCacheCheck=false&isPrint=false&templateName=original&request={%22isAgent%22:false,%22eventType%22:%22download%22,%22eventDetails%22:[{%22name%22:%22screen%20name%22,%22value%22:%22finalize%22},{%22name%22:%22bold%20profile%20link%20included%22,%22value%22:%22FALSE%22},{%22name%22:%22bold%20profile%20url%22,%22value%22:%22NULL%22}]}&documentName=Ashir_Nodejs_Engineer1&sendDownloadEvent=false
